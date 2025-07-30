@@ -7,6 +7,8 @@ import RecipeList from './components/RecipeList'
 import useRecipeStore from './components/recipeStore'
 import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom';
 import RecipeDetails from './components/RecipeDetails';
+import FavoritesList from './components/FavoritesList'
+import RecommendationsList from './components/RecommendationsList'
 
 
 const RecipeDetailsPage = () => {
@@ -25,8 +27,13 @@ function App() {
           </Routes>
         </BrowserRouter>
 
+        <FavoritesList />
+        <RecommendationsList />
+
         <AddRecipeForm />
         <RecipeList />
+
+        
       </div>
     </>
   )
