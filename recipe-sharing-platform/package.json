@@ -27,3 +27,5 @@
     "vite": "^7.1.0"
   }
 }
+
+// ["postcss", "autoprefixer"]
